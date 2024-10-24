@@ -54,8 +54,8 @@
         border-color: rgba(255, 255, 255, 0.1);
         background: #b4dc2d;
     }
-    .nui_image{
-        display: none;
+    .nui_image,.hide_content{
+        display: none !important;
     }
   .social-icons{
     text-align: left;
