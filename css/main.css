@@ -1,8 +1,8 @@
-html {
+/* html {
     background: #e6e9e9;
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
-}
+} */
 
 body {
     background: #fff;
@@ -744,19 +744,10 @@ header .fa {
 
 .page-footer {
     border-top: 1px solid #cccccc;
+    background: linear-gradient(to top, #9fc8f2,#f8f9fa);
 }
 
-.page-footer .box-1 {
-    border-right: 1px solid #cccccc;
-    padding-top: 75px;
-    padding-bottom: 80px;
-}
 
-.page-footer .box-2,
-.page-footer .box-3,
-.page-footer .box-4 {
-    padding-top: 75px;
-}
 
 .footer-copyright {
     position: relative;
@@ -766,47 +757,7 @@ header .fa {
     background-size: cover;
 }
 
-.footer-copyright p {
-    font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
-    position: relative;
-    text-transform: uppercase;
-    padding: 40px 0;
-    margin-bottom: 0;
-}
 
-.footer-copyright p a {
-    color: #8dc63f;
-}
-
-.page-footer img {
-    margin-bottom: 30px;
-}
-
-.page-footer h5 {
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem !important;
-}
-
-.page-footer p {
-    font-size: 16px;
-    font-weight: 300;
-    padding-right: 40px;
-}
-
-.page-footer ul > li a {
-    color: #707070;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.page-footer ul > li a:hover {
-    color: #8dc63f;
-}
 
 /*===============================
            About-Page
