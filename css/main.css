@@ -13,9 +13,31 @@
     .page-footer img {
         width: 90%;
     }
+    .brd_image{
+        width: 100%;
+    }
+    .navbar-dark .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: -65px;
+    }
+    .navbar-dark .navbar-toggler {
+        color: rgb(0, 0, 0);
+        border-color: rgba(255, 255, 255, 0.1);
+        background: #b4dc2d;
+    }
+    .nui_image{
+        display: none;
+    }
+  .social-icons{
+    text-align: left;
+  }
 }
 .page-padd{
     margin: 0 14rem;
+}
+.brd_image{
+    width: 100%;
 }
 body {
     background: #fff;
@@ -90,7 +112,7 @@ header h6 {
 }
 
 nav {
-    background-color: #ffffff !important;
+    background-color: #e3dddd !important;
     border-top: 1px solid #e5e5e5;
     -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1607843137254902);
     -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1607843137254902);
@@ -147,7 +169,7 @@ header .fa {
 /* style for when sitcky is applied */
 
 .stuck .sticky-top {
-    background-color: #ffffff !important;
+    background-color: #e3dddd !important;
 }
 
 .jumbotron {
