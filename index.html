@@ -41,6 +41,7 @@
             padding-left: 70px;
             font-weight: bold;
             font-size: 2.9em;
+            letter-spacing: 7px;
             /* Adjust size based on the image */
             color: gray;
             /* Golden-like color similar to the image */
@@ -57,6 +58,10 @@
             color: #000;
             color: green;
             font-style: italic;
+        }
+
+        .header-cont {
+            margin: 0 10rem;
         }
 
         @media(max-width:768px) {
@@ -80,6 +85,12 @@
                 padding: 20px;
                 text-align: justify;
             }
+
+            .header-cont {
+                margin: 0;
+            }
+       
+
         }
 
         @media(min-width:900px) {
@@ -93,34 +104,59 @@
                 margin: 0 5rem;
             }
         }
+        .navbar-brand h1 {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 2.5rem;
+        }
+        .subtext {
+            font-size: .8rem;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: #000 !important;
+            margin-top: -10px;
+            text-align: left;
+        }
+   
     </style>
 </head>
 
 <body>
     <header class="header bg">
-        <div class="container text-white">
+        <div class="header-cont text-white">
             <div class="row align-items-center justify-content-between">
                 <!-- Left Column (Logos) -->
-                <div class="col-sm-3 text-left d-flex align-items-center justify-content-start hide_content">
-                    <img style="width: 160px;" src="images/oldwestbury.jpg" alt="logo">
-                </div>
+                <div class="col-sm-6 text-left d-flex align-items-center justify-content-start hide_content">
+                    <img class="mr-5" src="images/ADELPHI UNI.png" alt="logo">
 
+                    <img class="ml-5" src="images/oldwestbury.jpg" alt="logo">
+
+                </div>
+                <!-- <div class="col-sm-2 text-left d-flex align-items-center justify-content-start hide_content">
+                    <img class="ml-5" style="width: 140px;" src="images/ADELPHI UNI.png" alt="logo">
+                </div> -->
                 <!-- Center Column (Main Logo) -->
                 <div class="col-sm-4 text-center">
                     <a class="navbar-brand" href="index.html">
-                        <img class="brd_image" src="images/header name.png" alt="logo">
+                        <!-- <img class="brd_image" src="images/header name.png" alt="logo"> -->
+                            <h1>Dr. Alireza Ebrahimi</h1>
                     </a>
+                    <div class="subtext">
+                        <a href="#" data-toggle="modal" data-target="#loginModal">Login</a> <span class="text-dark">|</span> <a href="#" data-toggle="modal" data-target="#RegModal">Register</a>
+                    </div>
                 </div>
-
+                <div class="col-sm-1"></div>
                 <!-- Right Column (Login/Register) -->
-                <div class="col-sm-2 text-left d-flex align-items-center">
+                <!-- <div class="col-sm-2">
                     <div class="social-icons">
                         <a href="#">Login</a> <span class="text-dark">|</span> <a href="#">Register</a>
                     </div>
-                </div>
-                <div class="col-sm-3 text-left d-flex align-items-center justify-content-start hide_content">
-                    <img class="ml-5" style="width: 140px;" src="images/ADELPHI UNI.png" alt="logo">
-                </div>
+                </div> -->
+
             </div>
         </div>
     </header>
@@ -257,24 +293,75 @@
 
 
 
+    
+        <div class="modal fade" id="loginModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="padding: 1rem 2rem;">
+                <div class="d-flex flex-column text-center">
+                    <h5 class="modal-title mb-4">Login Here</h5>
 
+                    <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                    </div>
+                    <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                    </form>
+                    
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="signup-section">Not a member yet? <a data-toggle="modal" data-target="#RegModal" id="loginModalClick" class="text-info">Register</a>.</div>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="RegModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="padding: 1rem 2rem;">
+                <div class="d-flex flex-column text-center">
+                    <h5 class="modal-title mb-4">Register Here</h5>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="name"placeholder="Your name...">
+                        </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password1" placeholder="Confirm password...">
+                    </div>
+                    <button type="button" class="btn btn-info btn-block btn-round">Register</button>
+                    </form>
+                    
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="signup-section">Already account ? <a data-toggle="modal" data-target="#loginModal" id="RegModalClick"  class="text-info">Login</a>.</div>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -290,11 +377,6 @@
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-            $(this).ekkoLightbox();
-        });
-
     </script>
 </body>
 

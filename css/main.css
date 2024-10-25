@@ -10,7 +10,13 @@
         justify-content: center;
         align-items: center;
     }
-
+    .navbar-brand h1 {
+        letter-spacing: 1px !important;
+        font-size: 1.2rem !important;
+    }
+    .subtext {
+        text-align: center !important;
+    }
     .footer-item {
         margin: 10px 0;
         /* Add margin for spacing between stacked items */
@@ -54,7 +60,8 @@
     }
 
     .brd_image {
-        width: 100%;
+        width: 80% !important;
+        margin-right: 20px;
     }
 
     .navbar-dark .navbar-toggler {
@@ -75,10 +82,12 @@
     }
 
     .social-icons {
-        text-align: left;
+        text-align: center !important;
     }
 }
-
+.social-icons{
+    text-align: right;
+}
 .page-padd {
     margin: 0 14rem;
 }
