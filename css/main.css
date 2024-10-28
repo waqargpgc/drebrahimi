@@ -3,6 +3,17 @@
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
 } */
+@media(min-width:900px) {
+    .home-page,.page-padd  {
+        margin: 0 2rem !important;
+    }
+}
+
+@media(min-width:1400px) {
+    .home-page,.page-padd  {
+        margin: 0 5rem !important;
+    }
+}
 @media(max-width:768px) {
     .footer-container {
         flex-direction: column;
@@ -161,7 +172,7 @@ ul>li {
     ======*/
 
 header {
-    padding: 45px 0;
+    padding: 4px 0;
     color: #000000;
     background-color: #ffffff;
 }
@@ -271,7 +282,8 @@ header .fa {
     width: 100%;
     height: 772px;
     position: relative;
-    background-image: url(../images/index.jpg);
+    /* background-image: url(../images/index.jpg); */
+    background-image: url(../images/backgrounds.png\ without\ VPCL.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -280,7 +292,7 @@ header .fa {
 .jumbotron h1,
 .jumbotron h2,
 .jumbotron h4 {
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -328,6 +340,7 @@ header .fa {
 }
 
 .content {
+    color:#000 !important;
     position: relative;
     text-align: center;
 }
@@ -338,9 +351,9 @@ header .fa {
     height: 100%;
     top: 0;
     left: 0;
-    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
     background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%); */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000000', endColorstr='#b3000000', GradientType=1);
 }
 
@@ -875,7 +888,7 @@ header .fa {
 footer {
     background: linear-gradient(to bottom, #ffffff, #a3d4f7);
     /* Light blue gradient */
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
     color: #333;
 }
@@ -1934,7 +1947,7 @@ textarea.form-control {
 
 @media(max-width:1024px) {
     header {
-        padding: 30px 0;
+        padding: 10px 0;
     }
 
     .navbar-dark .navbar-nav .nav-link,
